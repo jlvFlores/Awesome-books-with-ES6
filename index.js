@@ -6,7 +6,7 @@ const currentDateTime = document.querySelector('.date-time');
 setInterval(() => {
   const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
   currentDateTime.textContent = now;
-}, 60000);
+}, 1000);
 
 const addButton = document.getElementById('add-btn');
 addButton.addEventListener('click', () => {
