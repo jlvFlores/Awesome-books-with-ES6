@@ -4,7 +4,7 @@ import './modules/menu.js';
 
 const currentDateTime = document.querySelector('.date-time');
 setInterval(() => {
-  const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+  const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS);
   currentDateTime.textContent = now;
 }, 1000);
 
