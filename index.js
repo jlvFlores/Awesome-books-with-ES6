@@ -8,13 +8,13 @@ setInterval(() => {
   currentDateTime.textContent = now;
 }, 1000);
 
-const addButton = document.getElementById('add-btn');
-addButton.addEventListener('click', () => {
+const form = document.querySelector('form');
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
   const inputTitle = document.getElementById('input-title').value;
   const inputAuthor = document.getElementById('input-author').value;
-  if (inputTitle && inputAuthor) {
-    library.addBook(inputTitle, inputAuthor);
-  }
+  if (inputTitle && inputAuthor) library.addBook(inputTitle, inputAuthor);
+  form.reset();
 });
 
 library.displayBooks();
