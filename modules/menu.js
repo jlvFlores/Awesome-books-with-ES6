@@ -1,41 +1,49 @@
+import library from './library.js';
+
 const menuList = document.getElementById('menu-list');
 const menuAdd = document.getElementById('menu-add');
 const menuContact = document.getElementById('menu-contact');
 
-const librarySection = document.querySelector('.library-section');
-const addSection = document.querySelector('.add-section');
-const contactSection = document.querySelector('.contact-section');
+const sections = {
+  library: document.querySelector('.library-section'),
+  add: document.querySelector('.add-section'),
+  contact: document.querySelector('.contact-section'),
+};
+
+const hideSections = (...sections) => {
+  sections.forEach((section) => section.classList.add('hide'));
+};
 
 window.onload = () => {
   menuList.classList.add('blue');
-
-  addSection.classList.add('hide');
-  contactSection.classList.add('hide');
+  hideSections(sections.add, sections.contact);
 };
 
-const menuChange = (self, secondLi, thirdLi) => {
+const menuChange = (self, secondLI, thirdLI) => {
   self.classList.add('blue');
-  secondLi.classList.remove('blue');
-  thirdLi.classList.remove('blue');
+  secondLI.classList.remove('blue');
+  thirdLI.classList.remove('blue');
 };
 
 const sectionChange = (self, secondSection, thirdSection) => {
   self.classList.remove('hide');
-  secondSection.classList.add('hide');
-  thirdSection.classList.add('hide');
+  hideSections(secondSection, thirdSection);
+};
+
+const handleMenuClick = (self, secondMenu, thirdMenu, selfSection, secondSection, thirdSection) => {
+  menuChange(self, secondMenu, thirdMenu);
+  sectionChange(selfSection, secondSection, thirdSection);
 };
 
 menuList.addEventListener('click', () => {
-  menuChange(menuList, menuAdd, menuContact);
-  sectionChange(librarySection, contactSection, addSection);
+  handleMenuClick(menuList, menuAdd, menuContact, sections.library, sections.add, sections.contact);
+  library.displayBooks();
 });
 
 menuAdd.addEventListener('click', () => {
-  menuChange(menuAdd, menuContact, menuList);
-  sectionChange(addSection, librarySection, contactSection);
+  handleMenuClick(menuAdd, menuContact, menuList, sections.add, sections.library, sections.contact);
 });
 
 menuContact.addEventListener('click', () => {
-  menuChange(menuContact, menuList, menuAdd);
-  sectionChange(contactSection, addSection, librarySection);
+  handleMenuClick(menuContact, menuList, menuAdd, sections.contact, sections.add, sections.library);
 });

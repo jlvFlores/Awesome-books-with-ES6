@@ -61,7 +61,7 @@ h2 {
   padding: 0.5rem;
 }
 
-.gray {
+.book:nth-child(odd) {
   background-color: lightgray;
 }
 
