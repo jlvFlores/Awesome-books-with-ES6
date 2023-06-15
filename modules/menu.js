@@ -1,4 +1,4 @@
-import library from "./library.js";
+import library from './library.js';
 
 const menuList = document.getElementById('menu-list');
 const menuAdd = document.getElementById('menu-add');
@@ -7,7 +7,11 @@ const menuContact = document.getElementById('menu-contact');
 const sections = {
   library: document.querySelector('.library-section'),
   add: document.querySelector('.add-section'),
-  contact: document.querySelector('.contact-section')
+  contact: document.querySelector('.contact-section'),
+};
+
+const hideSections = (...sections) => {
+  sections.forEach((section) => section.classList.add('hide'));
 };
 
 window.onload = () => {
@@ -19,10 +23,6 @@ const menuChange = (self, secondLI, thirdLI) => {
   self.classList.add('blue');
   secondLI.classList.remove('blue');
   thirdLI.classList.remove('blue');
-};
-
-const hideSections = (...sections) => {
-  sections.forEach(section => section.classList.add('hide'));
 };
 
 const sectionChange = (self, secondSection, thirdSection) => {
