@@ -29,17 +29,13 @@
 
 # 📖 [Awesome-books-with-ES6] <a name="about-project"></a>
 
-> An introduction to javascript in a new module.
+> An updated JavaScript project that uses better sintax for ES6.
 
-**[Awesome-books-with-ES6]** is a project that is aimed at teaching us how to code basic functionalities using javascript.
+**[Awesome-books-with-ES6]** is a project that is created with the focus of learning basic functionalities and improved practices using JavaScript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
-- HTML
-- CSS
-- ES6
-- LINTERS
-- VS Code
+Built with the guidence of Microverse's courses and lots of online forums.
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -47,8 +43,8 @@
 
 - HTML
 - CSS
-- ES6
-- LINTERS
+- ES6 (JavaScript)
+- EsLint and StyleLintrc
 - VS Code
 
 <details>
@@ -66,7 +62,7 @@
 
 > Description of some of the project's key features.
 
-- JS functions that creates html elements based on classes.
+- A JavaScript class that with various methos for manipulating HTML elements in the DOM.
 - Has working linters to encourage clean code.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -75,9 +71,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> There is currently no link to the demo project.
+> Here is the link to the live demo with the use of github pages.
 
-- N/A
+- [Awesome-books-with-ES6](https://jlvflores.github.io/Awesome-books-with-ES6/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,27 +87,30 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:  A web browser
+In order to run this project you need: [NodeJs](https://nodejs.org/en) installed, a web browser, a code editor like [VSCode](https://code.visualstudio.com/) and [Git](https://git-scm.com/) installed in order to clone this repository.
 
 ### Setup
 
-Clone this [repository](https://github.com/jlvFlores/Awesome-books-with-ES6) to your desired folder
+First open up a git Bash terminal and clone this [repository](https://github.com/jlvFlores/Awesome-books-with-ES6) to your desired folder, like so:
+
+```sh
+git clone https://github.com/jlvFlores/Awesome-books-with-ES6
+```
 
 ### Install
 
-Install this project with:  gitBash
+Install this project's dependencies with node, like so:
+```sh
+npm install
+```
 
 ### Usage
 
-To run the project, execute the following command:  Press the Go Live button on Visual Studio Code. 
-
-### Run tests
-
-To run tests, run the following command:  Press the Go Live button on Visual Studio Code. 
+To run the project, download the live server dependency from VSCode and click on the live server option at the bottom left of the window.
 
 ### Deployment
 
-You can deploy this project using:  Using [GitHub pages](https://jlvflores.github.io/Awesome-books-with-ES6/) Note: not yet implemented
+You can deploy this project using: Using [GitHub pages](https://jlvflores.github.io/Awesome-books-with-ES6/) like I've done here.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +124,7 @@ You can deploy this project using:  Using [GitHub pages](https://jlvflores.githu
 
 - GitHub: [jlvFlores](https://github.com/jlvFlores)
 - Twitter: [@JoseVaz44312762](https://twitter.com/JoseVaz44312762)
-- LinkedIn: [Jose Vazquez](https://www.linkedin.com/in/jose-vazquez-178a8225a/)
+- LinkedIn: [Jose Vazquez](https://www.linkedin.com/in/jose-luis-vazquez/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
